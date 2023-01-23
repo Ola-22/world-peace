@@ -1,0 +1,44 @@
+[debug] [2023-01-10T06:47:46.692Z] ----------------------------------------------------------------------
+[debug] [2023-01-10T06:47:46.696Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-10T06:47:46.697Z] CLI Version:   11.20.0
+[debug] [2023-01-10T06:47:46.697Z] Platform:      win32
+[debug] [2023-01-10T06:47:46.697Z] Node Version:  v19.0.1
+[debug] [2023-01-10T06:47:46.697Z] Time:          Tue Jan 10 2023 08:47:46 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2023-01-10T06:47:46.698Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-10T06:47:46.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-10T06:47:46.812Z] > authorizing via signed-in user (worldpeaceappdev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  H:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-10T06:47:53.494Z] Using project from CLI flag: world-peace-78895
+[debug] [2023-01-10T06:47:53.499Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/world-peace-78895 [none]
+[debug] [2023-01-10T06:47:54.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/world-peace-78895 200
+[debug] [2023-01-10T06:47:54.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/world-peace-78895 {"projectId":"world-peace-78895","projectNumber":"927733969248","displayName":"World Peace","name":"projects/world-peace-78895","resources":{"hostingSite":"world-peace-78895","realtimeDatabaseInstance":"world-peace-78895-default-rtdb","storageBucket":"world-peace-78895.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bcbcaa19-6e87-442f-a619-eda803fcc3b3"}
+[info] i  Using project world-peace-78895 (World Peace) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

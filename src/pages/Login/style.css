@@ -1,0 +1,108 @@
+.container{
+    background-color: var(--white-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .login-body{
+    display: flex;
+    width: 27%;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 15px 2px #474564;
+}
+
+@media (min-width: 500px) and (max-width: 1080px) {
+    .container .login-body{
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container .login-body{
+        width: 90%;
+    }
+}
+
+.container .login-body span{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--light-black);
+}
+
+@media (max-width: 600px) {
+    
+.container .login-body span{
+    font-size: 20px;
+}
+}
+
+.container .login-body form{
+    display: flex;
+    margin-top: 10px;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+.container .login-body form .register-link{
+    font-size: 13px;
+}
+.container .login-body form .error{
+    color: red;
+    font-size: 13px;
+}
+.container .login-body form .input-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.container .login-body form .input-container label{
+    font-weight: bold;
+    font-size: 13px;
+}
+.container .login-body form input{
+    height: 43px;
+    border-radius: 15px;
+    border: 1px solid var(--light-black);
+    outline: none;
+    padding-inline-start: 15px;
+}
+
+.container .login-body form button{
+    height: 40px;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--light-black);
+    color: var(--white-color);
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+    font-size: 13px;
+}
+
+.forget-password{
+    text-align: right;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.container .forget-body span{
+    font-size: 28px;
+}
+
+@media (max-width: 800px) {
+    .container .forget-body{
+        width: 80%;
+    }
+}
