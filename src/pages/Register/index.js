@@ -1,8 +1,8 @@
-import { setDoc , doc, Timestamp, serverTimestamp } from 'firebase/firestore';
+import { setDoc , doc, Timestamp } from 'firebase/firestore';
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useUserAuthContext } from '../../context/userAuthContext';
-import db, { auth } from "./../../firebase"
+import db from "./../../firebase"
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Signup = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             setError("Error! Confirm Password Not Match")
         } else{
            await register(email, password)
@@ -31,7 +31,6 @@ const Signup = () => {
                 navigate("/dashboard")
             })
             .catch((error) => {
-                const errorCode = error.code;
                 const errorMessage = error.message;
                 setError(errorMessage)
             });   

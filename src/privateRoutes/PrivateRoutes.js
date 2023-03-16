@@ -2,7 +2,6 @@ import { Navigate } from "react-router-dom";
 import { useUserAuthContext } from "../context/userAuthContext";
 
 function PrivateRoutes({ children }) {
-  const { user } = useUserAuthContext();
 
   JSON.parse(localStorage.getItem("user"))
 

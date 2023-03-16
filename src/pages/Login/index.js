@@ -1,8 +1,6 @@
 import "./style.css"
 import { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { Link, NavLink, useNavigate } from 'react-router-dom'
-import { auth } from "../../firebase";
+import { Link, useNavigate } from 'react-router-dom'
 import { useUserAuthContext } from "../../context/userAuthContext";
 
 function Login() {
